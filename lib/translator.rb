@@ -3,7 +3,7 @@ require "yaml"
 def load_library(file)
   lib = 
   {"get_meaning" => {}, 
-  ""get_emoticon"" => {} }
+  "get_emoticon" => {} }
   YAML.load_file(file).each do |trans, array|
     eng = Array.new
     jpn = Array.new
