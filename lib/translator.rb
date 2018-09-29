@@ -24,12 +24,12 @@ end
 end
 
 
-def get_english_meaning(file_path, emoticon)
-  library = load_library(file_path)
-  result = library["get_meaning"][emoticon]
-  if result
-    result
+def get_english_meaning(path, icon)
+   lib = load_library(path)
+  emoticon = lib["get_meaning"][icon]
+  if emoticon  
+    emoticon 
   else
     "Sorry, that emoticon was not found"
-  end
+end
 end
