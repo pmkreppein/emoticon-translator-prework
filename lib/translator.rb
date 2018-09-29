@@ -5,8 +5,7 @@ def load_library(file)
   {"get_meaning" => {}, 
   "get_emoticon" => {} }
   YAML.load_file(file).each do |trans, array|
-    eng = Array.new
-    jpn = Array.new
+    eng, jpn = array
     lib["get_emoticon"][eng] = jpn
     lib["get_meaning"][jpn] = trans
   end
