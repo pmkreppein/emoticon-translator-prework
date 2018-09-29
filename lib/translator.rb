@@ -13,8 +13,11 @@ def load_library(file)
   lib
 end
 
-def get_japanese_emoticon
-  # code goes here
+
+def get_japanese_emoticon(path, icon)
+  lib = load_library(path)
+  rslt = lib["get_emoticon"][icon]
+  result ? return result : return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
